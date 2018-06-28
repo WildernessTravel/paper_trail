@@ -103,7 +103,7 @@ module PaperTrail
       AttributeSerializers::ObjectChangesAttribute.
         new(@record.class).
         serialize(notable_changes)
-      notable_changes.to_hash
+      notable_changes.to_h
     end
 
     # Is PT enabled for this particular record?
